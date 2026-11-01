@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 – Stranica nije pronađena | Maternia</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Jost:wght@300;400&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#d3c3af;--fg:#2a2118;--accent:#95765b;
+  --muted:#8e8c73;--sand:#7b7252;
+}
+html,body{height:100%}
+body{
+  background:var(--bg);color:var(--fg);
+  font-family:'Jost',sans-serif;font-weight:300;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:100svh;padding:2rem;text-align:center;
+}
+.eyebrow{
+  font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:.75rem;
+  justify-content:center;margin-bottom:1.5rem;
+}
+.eyebrow::before,.eyebrow::after{
+  content:'';display:block;height:1px;width:2rem;background:var(--muted);opacity:.4;
+}
+.num{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:clamp(5rem,18vw,11rem);font-weight:500;
+  color:rgba(149,118,91,.18);line-height:1;
+  margin-bottom:.25rem;
+  animation:drift 8s ease-in-out infinite;
+}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+h1{
+  font-family:'Playfair Display',serif;font-weight:500;
+  font-size:clamp(1.4rem,3vw,2rem);margin-bottom:1rem;
+}
+p{color:var(--sand);font-size:.9rem;line-height:1.7;max-width:380px;margin:0 auto 2.5rem}
+a.btn{
+  display:inline-block;
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--fg);border:1px solid var(--accent);
+  padding:.8rem 2rem;text-decoration:none;
+  transition:background .25s,color .25s;
+}
+a.btn:hover{background:var(--accent);color:#fff}
+.footer-note{
+  position:fixed;bottom:1.5rem;
+  font-size:.68rem;letter-spacing:.1em;color:var(--muted);opacity:.6;
+}
+</style>
+</head>
+<body>
+  <p class="eyebrow">Maternia</p>
+  <div class="num">404</div>
+  <h1>Stranica nije pronađena</h1>
+  <p>Izgubili ste se? Ova stranica ne postoji ili je premještena. Vratite se na početnu i pokušajte ponovo.</p>
+  <a class="btn" href="/">Povratak na početnu</a>
+  <span class="footer-note">maternia.hr &nbsp;·&nbsp; Boutique Edukacijski Studio, Varaždin</span>
+</body>
+</html>
