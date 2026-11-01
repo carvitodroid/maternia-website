@@ -1,8 +1,5 @@
 # Cloudflare Pages redirects
 
-# Redirect www to apex
-https://www.maternia.hr/* https://maternia.hr/:splat 301!
-
 # Hash routes — serve index for any path so deep links work
 /o-nama     /index.html  200
 /usluge     /index.html  200
